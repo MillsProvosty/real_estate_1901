@@ -19,13 +19,16 @@ class House
     end
   end
 
-  #I want to take the area from each rooms
-  #and add them together to create a total
-  #house area
-  def area(house)
-    house.find_all do |room|
-      room.area.
+  #I want to take the area from each room, and add them together to create a new array, then add each area total together to create house area
+  def area(area_1, area_2)
+    rooms.map do |area|
+      area_1 * area_2
+    end
   end
+
+  # def price_per_square_foot(area, price)
+  #   (#{area} % #{price})
+  # end
 
 
 end
